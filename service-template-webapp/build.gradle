@@ -1,0 +1,21 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.7.RELEASE'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform('org.springframework.boot:spring-boot-dependencies:2.3.7.RELEASE')
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,4 +1,5 @@
 rootProject.name = 'service-template'
 
 include 'service-template-webapp'
-
+include 'service-template-models'
+include 'service-template-connectors'

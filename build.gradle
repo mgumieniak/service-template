@@ -1,5 +1,6 @@
 subprojects {
     apply plugin: 'java'
+    apply plugin: 'maven-publish'
 
     group = 'com.mgumieniak'
     version = '1.0'
@@ -8,6 +9,7 @@ subprojects {
     targetCompatibility = 1.11
 
     repositories {
+        mavenLocal()
         mavenCentral()
         jcenter()
     }

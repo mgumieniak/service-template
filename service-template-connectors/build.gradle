@@ -8,7 +8,6 @@ dependencies {
 
     // PROJECTS
     implementation project(':service-template-models')
-    implementation 'com.web:common-rest:1.0'
 
     //SPRING
     implementation 'org.springframework.boot:spring-boot-starter'

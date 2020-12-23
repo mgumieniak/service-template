@@ -7,10 +7,15 @@ repositories {
 }
 
 dependencies {
+    // BOM
     implementation platform('org.springframework.boot:spring-boot-dependencies:2.3.7.RELEASE')
 
+    //SPRING
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 
+
+    // TEST
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }

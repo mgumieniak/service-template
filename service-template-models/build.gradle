@@ -4,6 +4,7 @@ plugins {
 
 dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
+    implementation "com.web:common-rest:${common_rest_version}"
 }
 
 test {

@@ -13,7 +13,7 @@ public class Controller {
 
     @GetMapping("")
     public String get(){
-        val test2 = new Test2("1","1");
+        val test2 = new Test2("1","1", "1");
         val test = new Test();
         return "KOT";
     }

@@ -11,7 +11,6 @@ subprojects {
     repositories {
         mavenLocal()
         mavenCentral()
-        jcenter()
     }
 
     dependencies {
@@ -19,8 +18,8 @@ subprojects {
         compileOnly "org.projectlombok:lombok:${lombok_version}"
 
         // mapper
-        implementation "org.mapstruct:mapstruct-jdk8:${mapstructVersion}"
-        annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+        implementation "org.mapstruct:mapstruct-jdk8:${map_struct_version}"
+        annotationProcessor "org.mapstruct:mapstruct-processor:${map_struct_version}"
 
         annotationProcessor "org.projectlombok:lombok:${lombok_version}"
     }

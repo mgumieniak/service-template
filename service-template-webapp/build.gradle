@@ -1,19 +1,21 @@
 plugins {
-    id 'org.springframework.boot' version '2.3.7.RELEASE'
+    id 'org.springframework.boot' version "${spring_boot_version}"
+    id 'com.google.cloud.tools.jib' version "${jib_version}"
 }
 
 dependencies {
     // BOM
-    implementation platform('org.springframework.boot:spring-boot-dependencies:2.3.7.RELEASE')
+    implementation platform("org.springframework.boot:spring-boot-dependencies:${spring_boot_version}")
+    implementation platform("org.springframework.cloud:spring-cloud-dependencies:${spring_cloud_version}")
 
     // PROJECTS
     implementation project(':service-template-models')
-    implementation 'com.web:common-rest:1.0'
+    implementation "com.web:common-rest:${common_rest_version}"
 
     //SPRING
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-
 
     // TEST
     testImplementation('org.springframework.boot:spring-boot-starter-test') {

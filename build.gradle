@@ -22,6 +22,12 @@ subprojects {
         annotationProcessor "org.mapstruct:mapstruct-processor:${map_struct_version}"
 
         annotationProcessor "org.projectlombok:lombok:${lombok_version}"
+
+        //GSON
+        implementation "com.google.code.gson:gson:${gson_version}"
+
+        //JSR305
+        implementation "com.google.code.findbugs:jsr305:${jsr305_version}"
     }
 }
 
